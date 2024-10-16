@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Aventura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Drama</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Romances</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Biografias</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favorito.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe o que ler?</h2>
+    <p class="banner__texto">Mergulhe num mundo de imaginação!</p>
+      <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Lançamentos</h2>
+    <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+   <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="img/areia.jpg" alt="areia"></div>
+    <div class="swiper-slide"><img src="img/cartomante.jpg" alt="cartomante"></div>
+    <div class="swiper-slide"><img src="img/ilha.jpg" alt="ilha"></div>
+    <div class="swiper-slide"><img src="img/laranja.jpg" alt="laranja"></div>
+    <div class="swiper-slide"><img src="img/moreninha.jpg" alt="moreninha"></div>
+    <div class="swiper-slide"><img src="img/memorias.jpg" alt="memorias"></div>
+    <div class="swiper-slide"><img src="img/vassoura.jpg" alt="vassoura"></div>
+  </div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+          
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Eu sou Malala</h2>
+            <p class="descrição__texto">Eu sou Malala é a história de uma família exilada pelo terrorismo global, da luta pelo direito à educação feminina e dos obstáculos à valorização da mulher em uma sociedade que privilegia filhos homens.</p>
+          </div>
+            <img src="img/malala.jpg" class="descrição__imagem">
+        </div>
+         <div class="card__botões">
+            <ul class="botões">
+              <li class="botões__item"><img src="img/Favorito.svg" alt="favoritar livro"></li>
+              <li class="botões__item"><img src="img/Compras.svg" alt="adicionar"></li>
+            </ul>
+           <a href="#" class="botões__ancora">Saiba mais</a>
+         </div>
+        </div>
+
+      </section>
+
+        <section class="tópicos">
+     <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+       <ul class="tópicos__lista">
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Android</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Livros</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Relatos</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Acontecimentos</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Fictício</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Drama</a>
+        </li>
+        <li class="tópicos__item">
+          <a href="#" class="tópicos__link">Aventura</a>
+        </li>
+       </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+  </section>
+
+
+  <hr>
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Alura - E.E.Dr.Pompilio Mercadante</h2>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+      const swiper = new Swiper('.swiper', {
+         spaceBetween: 10,
+         slidesPerView: 3,
+         pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+         },
+    });
+  </script>
+</body>
+</html>
